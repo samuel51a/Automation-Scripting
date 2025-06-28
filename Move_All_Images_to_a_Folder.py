@@ -13,8 +13,8 @@ try:
             print(f"Created '{image_folder}' folder.")
 
     for file in files:
-        if file.lower().endswith((".jpg","png")):
-            shutil.move(file,image_folder+"/"+file)
+        if file.lower().endswith((".jpg",".png")):
+            shutil.move(file,os.path.join(image_folder,file))
             print(f"Moved {file} to '{image_folder}' folder.")
         else:
             print(f"Skipping {file}, not an image file.")
