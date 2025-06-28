@@ -17,7 +17,7 @@ try:
             shutil.move(file,image_folder+"/"+file)
             print(f"Moved {file} to '{image_folder}' folder.")
         else:
-            print(f"SKipping {file}, not an image file.")
+            print(f"Skipping {file}, not an image file.")
     print(f"All image files have been moved to the '{image_folder}' folder.")
 
 except Exception as e:
